@@ -1,0 +1,24 @@
+###
+GET https://127.0.0.1:8000/api/urls?start_date=2024-09-01&end_date=2024-09-30
+###
+
+GET https://127.0.0.1:8000/api/urls?domain=com
+
+###
+POST https://localhost:8000/urls
+Content-Type: application/json
+
+[
+  {
+    "url": "http://test.com",
+    "created_at": "2024-09-30 12:00:00"
+  },
+  {
+    "url": "http://test1.com",
+    "created_at": "2024-09-28 15:30:00"
+  },
+  {
+    "url": "http://test2.org",
+    "created_at": "2024-09-29 09:45:00"
+  }
+]
